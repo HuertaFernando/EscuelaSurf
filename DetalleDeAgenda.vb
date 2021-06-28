@@ -187,7 +187,7 @@ Public Class DetalleDeAgenda
         cbTrabajador.Text = "0"
         txtSearch.ResetText()
         tbComentario.Text = ""
-#esto es una prueba
+        'esto es una prueba
     End Sub
 
     Private Sub DetalleDeAgenda_Load(sender As Object, e As EventArgs) Handles MyBase.Load
