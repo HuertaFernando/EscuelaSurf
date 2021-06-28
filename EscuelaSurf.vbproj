@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A795A972-FC0A-4413-BD68-76230E965813}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EscuelaSurf.My.MyApplication</StartupObject>
+    <RootNamespace>EscuelaSurf</RootNamespace>
+    <AssemblyName>EscuelaSurf</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EscuelaSurf.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EscuelaSurf.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agenda.Designer.vb">
+      <DependentUpon>agenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarStock.Designer.vb">
+      <DependentUpon>AgregarStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProducto.Designer.vb">
+      <DependentUpon>AgregarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProducto.Designer.vb">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagarAdelantado.Designer.vb">
+      <DependentUpon>PagarAdelantado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagarAdelantado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trabajadores.Designer.vb">
+      <DependentUpon>Trabajadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trabajadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrito.Designer.vb">
+      <DependentUpon>Carrito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carrito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleDeAgenda.Designer.vb">
+      <DependentUpon>DetalleDeAgenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeAgenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarCliente.Designer.vb">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleDeArriendo.Designer.vb">
+      <DependentUpon>DetalleDeArriendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleDeArriendo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arriendo.Designer.vb">
+      <DependentUpon>Arriendo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arriendo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarTrabajadores.Designer.vb">
+      <DependentUpon>AgregarTrabajadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarTrabajadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteDiario.Designer.vb">
+      <DependentUpon>ReporteDiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteDiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteMensual.Designer.vb">
+      <DependentUpon>ReporteMensual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteMensual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soporte.Designer.vb">
+      <DependentUpon>Soporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Productos.Designer.vb">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Productos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EleccionProductos.Designer.vb">
+      <DependentUpon>EleccionProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EleccionProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="agenda.resx">
+      <DependentUpon>agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarCliente.resx">
+      <DependentUpon>AgregarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarProducto.resx">
+      <DependentUpon>AgregarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarStock.resx">
+      <DependentUpon>AgregarStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarTrabajadores.resx">
+      <DependentUpon>AgregarTrabajadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arriendo.resx">
+      <DependentUpon>Arriendo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleDeAgenda.resx">
+      <DependentUpon>DetalleDeAgenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleDeArriendo.resx">
+      <DependentUpon>DetalleDeArriendo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.resx">
+      <DependentUpon>EditarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagarAdelantado.resx">
+      <DependentUpon>PagarAdelantado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trabajadores.resx">
+      <DependentUpon>Trabajadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carrito.resx">
+      <DependentUpon>Carrito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDiario.resx">
+      <DependentUpon>ReporteDiario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EleccionProductos.resx">
+      <DependentUpon>EleccionProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMensual.resx">
+      <DependentUpon>ReporteMensual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMensual.rdlc" />
+    <EmbeddedResource Include="Soporte.resx">
+      <DependentUpon>Soporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Productos.resx">
+      <DependentUpon>Productos.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

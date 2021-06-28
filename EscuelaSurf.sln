@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EscuelaSurf", "EscuelaSurf.vbproj", "{A795A972-FC0A-4413-BD68-76230E965813}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Updater", "..\Updater\Updater.vbproj", "{5B8405D9-7A10-4F60-8487-1A880A95B862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A795A972-FC0A-4413-BD68-76230E965813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A795A972-FC0A-4413-BD68-76230E965813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A795A972-FC0A-4413-BD68-76230E965813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A795A972-FC0A-4413-BD68-76230E965813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B8405D9-7A10-4F60-8487-1A880A95B862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8405D9-7A10-4F60-8487-1A880A95B862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8405D9-7A10-4F60-8487-1A880A95B862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8405D9-7A10-4F60-8487-1A880A95B862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6E97DB0-49E5-41B6-83E3-68064126145E}
+	EndGlobalSection
+EndGlobal
